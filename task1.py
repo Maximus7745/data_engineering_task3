@@ -43,10 +43,11 @@ for item in items:
         filt_items.append(item)
 
 with open('result_filt_1.json', 'w', encoding='utf-8') as f:
-    f.write(json.dumps(items))
+    json.dump(filt_items, f, ensure_ascii=False)
 
 with open('result_all_1.json', 'w', encoding='utf-8') as f:
-    f.write(json.dumps(items)) #Данные записывались уже отсортированными
+    json.dump(items, f, ensure_ascii=False)
+    #Данные записывались уже отсортированными
 
 views = list()
 
@@ -73,4 +74,5 @@ for item in items:
 
 result_num['text'] = result_text
 with open('result_1.json', 'w', encoding='utf-8') as f:
-    f.write(json.dumps(result_num))
+    json.dump(result_num, f, ensure_ascii=False)
+
