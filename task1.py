@@ -39,7 +39,7 @@ items = sorted(items, key=lambda x: x['rating'], reverse=True)
 
 filt_items = list()
 for item in items:
-    if(item['count'] != 6):
+    if(item['count'] != '6'):
         filt_items.append(item)
 
 with open('result_filt_1.json', 'w', encoding='utf-8') as f:
