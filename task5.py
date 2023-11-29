@@ -66,6 +66,9 @@ with open('result_filt_5.json', 'w', encoding='utf-8') as f:
 with open('result_all_5.json', 'w', encoding='utf-8') as f:
     json.dump(items, f, ensure_ascii=False) #Данные записывались уже отсортированными
 
+with open('result_all_5_2.json', 'w', encoding='utf-8') as f:
+    json.dump(items2, f, ensure_ascii=False)
+
 reviews = list()
 
 for item in items:
